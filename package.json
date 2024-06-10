@@ -1,5 +1,5 @@
 {
-  "name": "horizon-tailwind-react-nextjs",
+  "name": "Admin-AI-eCommerce",
   "version": "2.0.0",
   "private": true,
   "dependencies": {
@@ -21,17 +21,18 @@
     "@types/react-dom": "^18.0.6",
     "apexcharts": "3.35.5",
     "framer-motion": "^7.10.2",
+    "next": "^14.0.2",
+    "next-transpile-modules": "^9.0.0",
     "react": "^18.2.0",
     "react-apexcharts": "1.4.0",
     "react-calendar": "^3.9.0",
-    "next": "^14.0.2",
-    "next-transpile-modules": "^9.0.0",
     "react-custom-scrollbars-2": "^4.2.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
+    "react-no-ssr": "^1.1.0",
     "react-router-dom": "^6.4.0",
     "react-scripts": "5.0.1",
-    "react-no-ssr": "^1.1.0",
+    "sharp": "^0.33.4",
     "tailwindcss-rtl": "^0.9.0",
     "typescript": "^4.7.4",
     "web-vitals": "^2.1.4"
@@ -41,9 +42,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "lint": "next lint",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "lint": "next lint"
   },
   "eslintConfig": {
     "extends": [
