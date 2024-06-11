@@ -27,5 +27,5 @@ Install Dotpot iT by running the following commands:
 Clone the repository with the following command:
 
 ```bash
-git clone https://github.com/DotpotiT
-cd dotpot-it
+git clone https://github.com/DotpotiT/Admin-AI-eCommerce.git
+cd Admin-AI-eCommerce
