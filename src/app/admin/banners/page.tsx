@@ -148,13 +148,13 @@ console.log(banners)
               className='input-field'
             />
           </div>
-          {imageFile && (
+          {/* {imageFile && (
             <img
               src={URL.createObjectURL(imageFile)}
               alt="Uploaded"
               className="max-w-screen max-h-[55vh]"
             />
-          )}
+          )} */}
           
             <button type="submit" className="btn btn-info w-full">Submit</button>
        
@@ -171,7 +171,7 @@ console.log(banners)
         <th>Sub-Title</th>
         <th>Image</th>
         <th>Action</th>
-        <img src="" alt="" />
+        {/* <img src="" alt="" /> */}
       </tr>
     </thead>
     <tbody>
@@ -181,11 +181,11 @@ console.log(banners)
                 <td>{banner.subTitle}</td>
                 <td >
                  
-                  <img
+                  {/* <img
                     src={banner.image}
                     alt={`Uploaded ${banner._id}`}
                     className="w-40 h-auto"
-                  />
+                  /> */}
                 </td>
                 <td className=''>
                   <button

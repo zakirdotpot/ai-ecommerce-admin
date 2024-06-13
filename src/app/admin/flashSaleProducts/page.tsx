@@ -150,16 +150,16 @@ function FlashSaleProduct() {
     <div className="">
       <div className="w-full ">
       <ProductView
-      id={product._id} // Assuming product has an _id property
+      id={product} // Assuming product has an _id property
       product={product}
       isModalOpen={openView}
      
       closeModal={closeModal}
     /> 
       <DiscountEdit
-      id={product._id} // Assuming product has an _id property
-      productName={product.name}
-      productPrice={product.price}
+      id={product} // Assuming product has an _id property
+      productName={product}
+      productPrice={product}
       isModalOpen={open}
 
       closeModal={closeModal}
@@ -181,7 +181,7 @@ function FlashSaleProduct() {
               },
             },
           }}
-          rowsPerPageOptions={[6]}
+          // rowsPerPageOptions={[6]}
           getRowId={(row) => row._id}
           slots={{
             toolbar: CustomToolbar,

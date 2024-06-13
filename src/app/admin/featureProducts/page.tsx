@@ -156,7 +156,7 @@ function FeaturedProducts() {
               },
             },
           }}
-          rowsPerPageOptions={[6]}
+          // rowsPerPageOptions={[6]}
           getRowId={(row) => row._id}
           slots={{
             toolbar: CustomToolbar,

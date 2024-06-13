@@ -61,9 +61,9 @@ function CarPendingtable({ car }) {
           <div className="flex items-center space-x-3">
             <div className="avatar">
               <div className="mask mask-squircle w-12 h-12">
-                {carImages.map((image, index) => (
+                {/* {carImages.map((image, index) => (
                   <img key={index} src={image} alt={`Car ${index + 1}`} />
-                ))}
+                ))} */}
               </div>
             </div>
             <div className='w-full'>

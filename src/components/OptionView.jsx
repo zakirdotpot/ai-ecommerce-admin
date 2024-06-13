@@ -6,32 +6,31 @@ import { optionGet } from "../Actions/Option";
 
 function OptionView({ isModalOpen, closeModal, optionDetails }) {
   const [productype, setProductType] = useState([""]);
-  const [option, setOption] = useState([]);
 
-  const fetchOption = async () => {
-    try {
-      const response = await optionGet();
-      console.log("Response from API:", response[0].productType);
-      // Log the response
 
-      const category = response[0].category;
-      const pType = response[0].productType;
-
-      if (optionDetails.id == 2) {
-        setProductType(category);
-      } else {
-        setProductType(pType);
-      }
-    } catch (error) {
-      console.error("Errot fetching ", error);
-    }
-  };
+ 
 
   useEffect(() => {
-    fetchOption();
-  }, [optionDetails]);
+    const fetchOption = async () => {
+      try {
+        const response = await optionGet();
+        console.log("Response from API:", response[0].productType);
+        // Log the response
+  
+        const category = response[0].category;
+        const pType = response[0].productType;
+  
+        if (optionDetails.id == 2) {
+          setProductType(category);
+        } else {
+          setProductType(pType);
+        }
+      } catch (error) {
+        console.error("Errot fetching ", error);
+      }
+    };
+  },);
 
-  console.log(optionDetails);
 
   const handleProductType = (e, index) => {
     const values = [...productype];

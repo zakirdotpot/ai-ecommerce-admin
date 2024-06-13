@@ -199,16 +199,16 @@ function Products() {
     <div className="font-poppins text-navy-700 dark:text-white">
       <div className="w-full ">
       <ProductView
-      id={product?._id} // Assuming product has an _id property
+      id={product} // Assuming product has an _id property
       product={product}
       isModalOpen={isModalOpen}
      
       closeModal={closeModal}
     /> 
       <MakeFlashSale
-      id={product._id} // Assuming product has an _id property
-      productName={product.name}
-      productPrice={product.price}
+      id={product} // Assuming product has an _id property
+      productName={product}
+      productPrice={product}
       isModalOpen={isDiscountModalOpen}
 
       closeModal={closeDiscountModal}
@@ -233,7 +233,7 @@ function Products() {
               },
             },
           }}
-          rowsPerPageOptions={[6]}
+          // rowsPerPageOptions={[6]}
           getRowId={(row) => row._id}
           slots={{
             toolbar: CustomToolbar,

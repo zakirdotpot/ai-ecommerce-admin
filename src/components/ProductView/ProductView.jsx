@@ -21,12 +21,12 @@ function ProductView({ id, product, isModalOpen, closeModal }) {
                         interval={3000}
                         infiniteLoop={true}
                       >
-                        {product.images &&
+                        {/* {product.images &&
                           product.images.map((image, index) => (
                             <div key={index}>
                               <img src={image} alt={index} />
                             </div>
-                          ))}
+                          ))} */}
                       </Carousel>
                     </div>
 
