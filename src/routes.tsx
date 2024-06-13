@@ -9,103 +9,102 @@ import {
   MdBarChart,
   MdPerson,
   MdLock,
+  MdProductionQuantityLimits,
 } from 'react-icons/md';
-
-
-
+import { AiOutlineProject } from "react-icons/ai";
+import { FcSalesPerformance } from 'react-icons/fc';
+import { GiKnightBanner } from "react-icons/gi";
+import { GrUserSettings } from "react-icons/gr";
+import { FaFirstOrder } from 'react-icons/fa';
+import { RiCoupon5Line } from 'react-icons/ri';
+import { LiaBlogSolid } from "react-icons/lia";
 const routes = [
   {
     name: 'Main Dashboard',
     layout: '/admin',
-    path: 'default',
+    path: '/',
     icon: <MdHome className="h-6 w-6" />,
   },
   {
     name: 'Products',
     layout: '/admin',
-    path: 'nft-marketplace',
+    path: 'products',
     icon: <MdOutlineShoppingCart className="h-6 w-6" />,
 
-    secondary: true,
   },
   {
     name: 'Feature Products',
     layout: '/admin',
     icon: <MdBarChart className="h-6 w-6" />,
-    path: 'data-tables',
+    path: 'featureProducts',
   },
   {
     name: 'Flash Sale Products',
     layout: '/admin',
-    path: 'profile',
-    icon: <MdPerson className="h-6 w-6" />,
+    path: 'flashSaleProducts',
+    icon: <MdProductionQuantityLimits className="h-6 w-6" />,
   },
   {
     name: 'New Arrivals Products',
     layout: '/admin',
-    path: 'profile',
-    icon: <MdPerson className="h-6 w-6" />,
+    path: 'newArrivalsProducts',
+    icon: <AiOutlineProject className="h-6 w-6" />,
   },
   {
     name: 'Popular Products',
     layout: '/admin',
-    path: 'profile',
+    path: 'popularProducts',
     icon: <MdPerson className="h-6 w-6" />,
   },
 
-  {
-    name: 'Flash Sale Products',
-    layout: '/admin',
-    path: 'profile',
-    icon: <MdPerson className="h-6 w-6" />,
-  },
+
   {
     name: 'Sales & Revenue',
     layout: '/admin',
-    path: 'profile',
-    icon: <MdPerson className="h-6 w-6" />,
+    path: 'salesAndRevenue',
+    icon: <FcSalesPerformance className="h-6 w-6" />,
   },
   {
     name: 'Banners',
     layout: '/admin',
-    path: 'profile',
-    icon: <MdPerson className="h-6 w-6" />,
+    path: 'banners',
+    icon: <GiKnightBanner className="h-6 w-6" />,
   },
   {
     name: 'Orders',
     layout: '/admin',
-    path: 'profile',
-    icon: <MdPerson className="h-6 w-6" />,
+    path: 'orders',
+    icon: <FaFirstOrder className="h-6 w-6" />,
   },
   {
     name: 'Cart Products',
     layout: '/admin',
-    path: 'profile',
+    path: 'cartProducts',
     icon: <MdPerson className="h-6 w-6" />,
   },
   {
     name: 'Wishlist Products',
     layout: '/admin',
-    path: 'profile',
+    path: 'wishlistProducts',
     icon: <MdPerson className="h-6 w-6" />,
   },
   {
     name: 'User Management',
     layout: '/admin',
-    path: 'profile',
-    icon: <MdPerson className="h-6 w-6" />,
+    path: 'userManagement',
+    icon: <GrUserSettings className="h-6 w-6" />,
   },
   {
     name: 'Discount Coupons',
     layout: '/admin',
-    path: 'profile',
-    icon: <MdPerson className="h-6 w-6" />,
+    path: 'discountCoupons',
+    icon: <RiCoupon5Line className="h-6 w-6" />,
   },
   {
     name: 'Blogs',
     layout: '/admin',
-    path: 'profile',
-    icon: <MdPerson className="h-6 w-6" />,
+    path: 'blogs',
+    icon: <LiaBlogSolid  className="h-6 w-6" />,
   },
   {
     name: 'Sign In',
@@ -113,11 +112,6 @@ const routes = [
     path: 'sign-in',
     icon: <MdLock className="h-6 w-6" />,
   },
-  // {
-  //   name: 'RTL Admin',
-  //   layout: '/rtl',
-  //   path: 'rtl-default',
-  //   icon: <MdHome className="h-6 w-6" />,
-  // },
+
 ];
 export default routes;
