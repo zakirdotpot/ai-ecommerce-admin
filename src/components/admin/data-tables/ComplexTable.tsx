@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import CardMenu from 'components/card/CardMenu';
 import Card from 'components/card';
